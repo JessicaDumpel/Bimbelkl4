@@ -11,11 +11,11 @@
                 </div>
                 <div class="form-group">
                     <label for="">TGL_BAYAR</label>
-                    <input type="text" class="form-control" name="tanggal_bayar">
+                    <input type="date" class="form-control" name="tanggal_bayar">
                 </div>
                 <div class="form-group">
                     <label for="">GAMBAR</label>
-                    <upload class="form-control" name="gambar" rows="3"></upload>
+                    <textarea class="form-control" name="gambar" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="">STATUS</label>

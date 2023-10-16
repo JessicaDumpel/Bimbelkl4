@@ -1,10 +1,10 @@
 <div class="col-md-12">
     <div class="card">
-        <div class="card header">
+        <div class="card-header">
             Tambah Pembayaran
         </div>
         <div class="card-body">
-            <form action="/Bimbelkl4/app/proses.php" method="post">
+            <form action="/bimbelkl4/app/proses.php" method="post">
                 <div class="form-group">
                     <label for="">KET</label>
                     <input type="text" class="form-control" name="ket">
@@ -15,7 +15,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">GAMBAR</label>
-                    <textarea class="form-control" name="gambar" rows="3"></textarea>
+                    <upload class="form-control" name="gambar" rows="3"></upload>
                 </div>
                 <div class="form-group">
                     <label for="">STATUS</label>

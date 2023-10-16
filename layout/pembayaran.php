@@ -8,9 +8,8 @@ $data = $pmbyrn->tampil();
     <div class="card">
         <div class="class card-header d-flex justify-content-between">
             <h4>Pembayaran</h4>
-            <a href="/Bimbelkl4/index.php/pembayaran/add" class="btn btn-primary btn-sm">Tambah</a>
+            <a href="/bimbelkl4/index.php/pembayaran/add" class="btn btn-primary btn-sm">Tambah</a>
         </div>
-        <div class="card-header">Pembayaran</div>
         <div class="card-body">
             <table class="table table-bordered">
                 <tr>

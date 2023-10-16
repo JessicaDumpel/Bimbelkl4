@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <titl>Bimbel</title>
+    <titl>Bimbelkl4</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,22 +13,22 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/Bimbel">Home &#160;&#160;&#160;</a>
+                    <a class="nav-link" href="/Bimbelkl4">Home &#160;&#160;&#160;</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/Bimbelkl4/index.php/siswa" class="class-link">Siswa &#160;&#160;&#160;</a>
+                    <a href="/bimbelkl4/index.php/jadwal" class="nav-link">Jadwal &#160;&#160;&#160;</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/Bimbelkl4/index.php/pendaftaran" class="class-link">Pendaftaran &#160;&#160;&#160;</a>
+                    <a href="/bimbelkl4/index.php/kelas" class="nav-link">Kelas &#160;&#160;&#160;</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/Bimbelkl4/index.php/kelas" class="class-link">Kelas &#160;&#160;&#160;</a>
+                    <a href="/bimbelkl4/index.php/pembayaran" class="nav-link">Pembayaran &#160;&#160;&#160;</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/Bimbelkl4/index.php/jadwal" class="class-link">Jadwal &#160;&#160;&#160;</a>
+                    <a href="/bimbelkl4/index.php/pendaftaran" class="nav-link">Pendaftaran &#160;&#160;&#160;</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/Bimbelkl4/index.php/pembayaran" class="class-link">Pembayaran &#160;&#160;&#160;</a>
+                    <a href="/bimbelkl4/index.php/siswa" class="nav-link">Siswa &#160;&#160;&#160;</a>
                 </li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
             <div class="col-md-12">
                 <div class="row" style="margin-top : 75px !important;">
                     <?php
-                    $project_location = "/Bimbelkl4";
+                    $project_location = "/bimbelkl4";
                     $me = $project_location;
                     $request = strtok($_SERVER['REQUEST_URI'], "?");
                     switch ($request) {
@@ -47,49 +47,34 @@
                         case $me . '/index.php/jadwal':
                             require "layout/jadwal.php";
                             break;
+                        case $me . '/index.php/jadwal/add':
+                            require "layout/tambah_jadwal.php";
+                            break;
                         case $me . '/index.php/kelas':
                             require "layout/kelas.php";
                             break;
                         case $me . '/index.php/kelas/add':
-                            require "layout/kelas.php";
+                            require "layout/tambah_kelas.php";
                             break;
                         case $me . '/index.php/pembayaran':
                             require "layout/pembayaran.php";
                             break;
                         case $me . '/index.php/pembayaran/add':
-                            require "layout/pembayaran.php";
+                            require "layout/tambah_pembayaran.php";
                             break;
                         case $me . '/index.php/pendaftaran':
                             require "layout/pendaftaran.php";
                             break;
                         case $me . '/index.php/pendaftaran/add':
-                            require "layout/pendaftaran.php";
+                            require "layout/tambah_pendaftaran.php";
                             break;
+                        default:
                         case $me . '/index.php/siswa':
                             require "layout/siswa.php";
                             break;
                         case $me . '/index.php/siswa/add':
                             require "layout/tambah_siswa.php";
                             break;
-                        case $me . '/index.php/siswa/ubah':
-                            require "layout/ubah_siswa.php";
-                            break;
-                        case $me . '/index.php/tambah_jadwal/add':
-                            require "layout/tambah_jadwal.php";
-                            break;
-                        case $me . '/index.php/tambah_kelas/add':
-                            require "layout/tambah_kelas.php";
-                            break;
-                        case $me . '/index.php/tambah_pembayaran/add':
-                            require "layout/tambah_pembayaran.php";
-                            break;
-                        case $me . '/index.php/tambah_pendaftaran/add':
-                            require "layout/tambah_pendaftaran.php";
-                            break;
-                        case $me . '/index.php/tambah_siswa/add':
-                            require "layout/tambah_siswa.php";
-                            break;
-                        default:
                             http_response_code(404);
                             echo "404";
                             break;

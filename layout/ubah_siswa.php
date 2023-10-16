@@ -4,7 +4,7 @@
             Ubah Siswa
         </div>
         <div class="card-body">
-            <form action="/Bimbelkl4/app/proses.php" method="post">
+            <form action="/bimbelkl4/app/proses.php" method="post">
                 <div class="form-group">
                     <label for="">Nama</label>
                     <input type="text" class="form-control" name="nama">

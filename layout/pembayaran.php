@@ -2,7 +2,7 @@
 include "inc/Connection.php";
 include "app/Pembayaran.php";
 $pmbyrn = new Pembayaran();
-$data = $pmbrn->tampil();
+$data = $pmbyrn->tampil();
 ?>
 <div class="col-md-12">
     <div class="card">

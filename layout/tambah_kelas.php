@@ -10,7 +10,7 @@
                     <input type="text" class="form-control" name="tingkat kelas">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
+                    <button type="submit" name="tambah_kelas" class="btn btn-primary btn-sm">Simpan</button>
                 </div>
             </form>
         </div>

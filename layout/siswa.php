@@ -14,14 +14,20 @@ $data = $sw->tampil();
         <div class="card-body">
             <table class="table table-bordered">
                 <tr>
-                    <td>ID_PENDAFTARAN</td>
-                    <td>KET</td>
+                    <td>No</td>
+                    <td>Nama Siswa</td>
+                    <td>Keterangan</td>
+                    <td>Action</td>
                 </tr>
                 <?php foreach ($data as $key => $item) : ?>
                     <tr>
                         <td><?= $key + 1; ?></td>
-                        <td><?= $item['id_pendaftaran']; ?></td>
+                        <td><?= $item['nama']; ?></td>
                         <td><?= $item['ket']; ?></td>
+                        <td>
+                            <a href="/Bimbelkl4/index.php/siswa/ubah?idsiswa=<?= $item['idsiswa'] ?>" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="/Bimbelkl4/app/proses?hapus=siswa&idsiswa=<?= $item['idsiswa'] ?>" class="btn btn-danger btn-sm">Hapus</a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </table>

@@ -40,7 +40,7 @@
                     <?php
                     $project_location = "/Bimbelkl4";
                     $me = $project_location;
-                    $request = $_SERVER['REQUEST_URI'];
+                    $request = strtok($_SERVER['REQUEST_URI'], "?");
                     switch ($request) {
                         case $me . '/':
                             break;
@@ -53,14 +53,26 @@
                         case $me . '/index.php/kelas/add':
                             require "layout/kelas.php";
                             break;
+                        case $me . '/index.php/pembayaran':
+                            require "layout/pembayaran.php";
+                            break;
                         case $me . '/index.php/pembayaran/add':
                             require "layout/pembayaran.php";
+                            break;
+                        case $me . '/index.php/pendaftaran':
+                            require "layout/pendaftaran.php";
                             break;
                         case $me . '/index.php/pendaftaran/add':
                             require "layout/pendaftaran.php";
                             break;
-                        case $me . '/index.php/siswa/add':
+                        case $me . '/index.php/siswa':
                             require "layout/siswa.php";
+                            break;
+                        case $me . '/index.php/siswa/add':
+                            require "layout/tambah_siswa.php";
+                            break;
+                        case $me . '/index.php/siswa/ubah':
+                            require "layout/ubah_siswa.php";
                             break;
                         case $me . '/index.php/tambah_jadwal/add':
                             require "layout/tambah_jadwal.php";

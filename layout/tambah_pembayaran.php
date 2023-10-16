@@ -22,7 +22,7 @@
                     <textarea class="form-control" name="status" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
+                    <button type="submit" nama="tambah_pembayaran" class="btn btn-primary btn-sm">Simpan</button>
                 </div>
             </form>
         </div>
